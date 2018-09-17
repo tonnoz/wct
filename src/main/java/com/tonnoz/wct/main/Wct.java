@@ -22,7 +22,7 @@ public class Wct {
     private final String fileOutput;
 
     public void run() throws IOException {
-        final Output output = parseOutput();
+        final Output output = parseInputFile();
         writeOutputToFile(output);
     }
 
@@ -35,7 +35,7 @@ public class Wct {
         write(file, s.getBytes());
     }
 
-    private Output parseOutput() throws IOException {
+    private Output parseInputFile() throws IOException {
         try (final Stream<String> stream = Files.lines(Paths.get(fileInput))) {
             return new Output(
                     stream.filter(line -> line.matches(StringUtils.URL_REGEX))

@@ -17,7 +17,7 @@ import static com.tonnoz.wct.main.utils.StringUtils.isRegularLookingLogLine;
  * Example skipped line: "10/27/15, 10:23 - Save: Ahahahah"
  * Example matched line: "11/21/15, 12:38 - Enrico: Wow super cool! https://m.facebook.com/story.php?story_fbid=1111111
  * Example non-regular line: "https://www.youtube.com/watch?v=xxxxx&feature=youtu.be"
- * Another Example of a non-regular line: "xxaasd"
+ * Another Example of a non-regular line: "Some text"
  */
 @Data
 public class LogLine {
